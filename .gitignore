@@ -1,0 +1,33 @@
+# Local-only project docs. Never pushed, never deployed.
+credentials.md
+design-direction.md
+borrowed-patterns.md
+HANDOFF.md
+deploy.py
+_manifest.json
+
+# Secrets, always.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+github-pat.txt
+
+# Scratch.
+_RecycleBin/
+_research/
+swipes/
+runs/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Shrimp Shack: never in the deploy root (GitHub Pages serves the repo root).
+README.md
+docs/
+qa/
+shrimp-shack-pics/
+seo-audit.md
+*.py
