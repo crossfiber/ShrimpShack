@@ -134,7 +134,7 @@ body.drawer-open .hamburger{display:none}
 .board-row b{font-family:var(--serif);font-weight:400;font-size:1.5rem;color:var(--scarlet);line-height:1.1}
 .board-row p{margin:0;color:var(--ink-2);font-size:.98rem}
 .gameday .photo{margin-top:44px}
-.gameday .photo img{box-shadow:0 18px 44px rgba(0,0,0,.4)}
+.gameday .photo img{box-shadow:0 18px 44px rgba(0,0,0,.4);max-height:340px;object-fit:cover;object-position:center 42%;width:100%}
 
 /* hook */
 .hook-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:72px;align-items:center}
@@ -153,7 +153,8 @@ body.drawer-open .hamburger{display:none}
 .pw-box .btn:hover{background:#fff;color:var(--oxblood);border-color:#fff}
 
 /* reviews */
-.rev-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.rev-head{margin-bottom:36px}
+.rev-nav{display:flex;gap:10px;justify-content:center;margin-top:10px}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:44px}
 .stat{background:var(--white);padding:26px 28px;text-align:center}
 .stat b{display:block;font-family:var(--serif);font-size:2.4rem;color:var(--ink);line-height:1.1}
@@ -167,7 +168,6 @@ body.drawer-open .hamburger{display:none}
 .rev-card .stars{color:#E8A33D;font-size:.9rem;letter-spacing:2px;margin-bottom:14px}
 .rev-card blockquote{margin:0;font-size:1.02rem;line-height:1.6;color:var(--ink-2);flex:1}
 .rev-card footer{margin-top:18px;font-weight:700;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.rev-nav{display:flex;gap:10px}
 .rev-nav button{width:48px;height:48px;border:2px solid var(--ink);background:transparent;cursor:pointer;font-size:1rem;color:var(--ink);transition:background .2s,color .2s}
 .rev-nav button:hover{background:var(--ink);color:#fff}
 
@@ -226,7 +226,6 @@ body.drawer-open .hamburger{display:none}
 .foot-bottom .links a:hover{color:#fff}
 .credit{display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,.68);text-decoration:none}
 .credit img{height:20px;width:auto}
-.demo-note{margin-top:16px;font-size:.82rem;color:rgba(255,255,255,.62)}
 
 /* ===== menu page ===== */
 .menu-hero{margin-top:var(--nav-h);background:var(--oxblood);color:#fff;padding:56px 0 48px}
@@ -317,6 +316,7 @@ body.drawer-open .hamburger{display:none}
   .stat{padding:18px 20px}
   .stat b{font-size:1.9rem}
   .gameday .photo{margin-top:28px}
+  .gameday .photo img{max-height:none;object-fit:fill;object-position:initial}
   .styles-list li::after{margin:0 8px}
   .proof{gap:18px 28px;margin:30px 0}
   .review-pair{grid-template-columns:1fr;gap:24px}
