@@ -120,4 +120,17 @@ if ('scrollRestoration' in history) { history.scrollRestoration = 'auto'; }
       }, 60);
     }
   }
+
+  /* reviews carousel */
+  var rrail = document.getElementById('revRail');
+  var rprev = document.getElementById('revPrev');
+  var rnext = document.getElementById('revNext');
+  if (rrail && rprev && rnext) {
+    var rstep = function(){
+      var c = rrail.querySelector('.rev-item');
+      return c ? c.getBoundingClientRect().width + 22 : 420;
+    };
+    rprev.addEventListener('click', function(){ rrail.scrollBy({left: -rstep(), behavior:'smooth'}); });
+    rnext.addEventListener('click', function(){ rrail.scrollBy({left:  rstep(), behavior:'smooth'}); });
+  }
 })();
